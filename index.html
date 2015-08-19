@@ -131,7 +131,7 @@
 	</div>
 
 	<div class="col-lg-12">
-	<div class="col-lg-6" style="padding-left:0">
+		<div class="col-lg-6" style="padding-left:0">
 			<div class="project">
 				<div class="row" id="info">
 					<img src="img/mars_roVR.png" width=100% alt="" class="fade">
@@ -176,18 +176,13 @@
 	<!--script src="js/theme.js"></script-->
 	<!--script src="js/analytics.js"></script-->
 
-	<!--script type="text/javascript">
-		$(document).ready(function() {
-			function getRandomSize(min, max) {
-				return Math.round(Math.random() * (max - min) + min);
-			}
-			for (var i = 0; i < 25; i++) {
-				var width = getRandomSize(200, 400);
-				var height =  getRandomSize(200, 400);
-				$('#photos').append('<img src="http://www.lorempixel.com/'+width+'/'+height+'/cats" alt="pretty kitty">');
-			}
+	<script type="text/javascript">
+		$('.text').hide().removeClass('text').addClass('text-js');
+
+		$('.thumb').hover(function(){
+			$(this).find('.text-js').fadeToggle();
 		});
-	</script-->
+	</script>
 
 
 
