@@ -25,6 +25,13 @@
 		.fade:hover {
 			opacity: 0.5;
 		}
+
+		#greetings{
+			width: 100px
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis // This is where the magic happens
+		}
 	</style>
 	
 	<!--[if lt IE 9]>
@@ -35,7 +42,7 @@
 <body id="home">
 	<header class="navbar navbar-inverse normal navbar-fixed-top" role="banner">
 		<div class="container">
-			<div class="navbar-header">
+			<div id="greetings" class="navbar-header">
 				<a href="#" class="navbar-brand">Research in Augmented and Virtual Environments</a>
 			</div>
 			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
