@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>RAVE - Research in Augmented and Virtual Environments</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+	<!--link rel="stylesheet" type="text/css" href="css/base.css"-->
+	<!--link rel="stylesheet" type="text/css" href="css/theme.css"-->
+	<!--link rel="stylesheet" type="text/css" href="css/animate.css"-->
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<style>
+		button:hover {
+			background-color: #0F5D7E;
+		}
+	</style>
+
+	<style>
+		#photos {
+			/* Prevent vertical gaps */
+			line-height: 0;
+
+			-webkit-column-count: 5;
+			-webkit-column-gap:   0px;
+			-moz-column-count:    5;
+			-moz-column-gap:      0px;
+			column-count:         5;
+			column-gap:           0px;
+		}
+
+		#photos img {
+			/* Just in case there are inline attributes */
+			width: 100% !important;
+			height: auto !important;
+		}
+
+		@media (max-width: 1200px) {
+			#photos {
+				-moz-column-count:    4;
+				-webkit-column-count: 4;
+				column-count:         4;
+			}
+		}
+		@media (max-width: 1000px) {
+			#photos {
+				-moz-column-count:    3;
+				-webkit-column-count: 3;
+				column-count:         3;
+			}
+		}
+		@media (max-width: 800px) {
+			#photos {
+				-moz-column-count:    2;
+				-webkit-column-count: 2;
+				column-count:         2;
+			}
+		}
+		@media (max-width: 400px) {
+			#photos {
+				-moz-column-count:    1;
+				-webkit-column-count: 1;
+				column-count:         1;
+			}
+		}
+
+	</style>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body id="home">
+	<header class="navbar navbar-inverse normal navbar-fixed-top" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Research in Augmented and Virtual Environments</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<!--li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="aboutus.html">Team</a></li>
+							<li><a href="http://news.tc4ga.com/">News</a></li>
+						</ul>
+					</li-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://projectvisor.org/">VisoR</a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.visor.JuiceboxVR">Juicebox VR</a></li>
+							<li><a href="http://virtualreconstruction.rice.edu/">Virtual Reconstruction</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="hero">
+		<div class="container">
+			<div class="row">
+				<section id="photos"></section>
+			</div>
+			<div class="row" href="contact">
+				We're looking for looking for talented computer scientists, mathematicians, engineers, graphics/game designers, and researchers passionate about augmented/virtual/mediated reality. If you're interested in the sorts of things we do or have new ideas to explore, <a href="mailto:theaidenlab@gmail.com">reach out to us</a>!<br><br>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-white" style="padding-top:10px;">
+		<div class="container">
+			<div class="row credits">
+				<div class="col-md-12" style="color:#000 !important;">
+					Copyright © 2015. Aiden Lab - RAVE
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!--script src="js/theme.js"></script-->
+	<!--script src="js/analytics.js"></script-->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			function getRandomSize(min, max) {
+				return Math.round(Math.random() * (max - min) + min);
+			}
+			for (var i = 0; i < 25; i++) {
+				var width = getRandomSize(200, 400);
+				var height =  getRandomSize(200, 400);
+				$('#photos').append('<img src="http://www.lorempixel.com/'+width+'/'+height+'/cats" alt="pretty kitty">');
+			}
+		});
+	</script>
+
+
+
+<!--form>
+<input type="button" value="random link!" onClick="randomlinks()">
+</form-->
+
+</body>
+
+</html>
