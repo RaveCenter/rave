@@ -15,6 +15,18 @@
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 	<style>
+
+		.fade {
+			opacity: 1;
+			transition: opacity .25s ease-in-out;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+		}
+
+		.fade:hover {
+			opacity: 0.5;
+		}
+
 		#photos {
 			/* Prevent vertical gaps */
 			line-height: 0;
@@ -99,11 +111,12 @@
 	</header>
 
 	<section id="photos">
-		<img src="img/mars_roVR.png" alt="">
-		<img src="img/nvidia.png" alt="">
-		<img src="img/visor.png" alt="">
-		<img src="img/jbvr_hires.png" alt="">
-		<img src="img/reconstruction.png" alt="">
+		<img src="img/mars_roVR.png" alt="" class="fade">
+		<img src="img/nvidia.png" alt="" class="fade">
+		<img src="img/headset.png" alt="" class="fade">
+		<img src="img/visor.png" alt="" class="fade">
+		<img src="img/jbvr_hires.png" alt="" class="fade">
+		<img src="img/reconstruction.png" alt="" class="fade">
 	</section>
 	<div id="hero">
 		<a href="contact"></a>
