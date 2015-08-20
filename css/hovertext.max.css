@@ -11,16 +11,17 @@
 }
 
 .captioned figcaption {
+	z-index: -100;
 	background: rgba(0,0,0,0);
 	color: black;
 	display: table;
-	width: 100%;
-	left: 0;
 	opacity: 0;
+	width: 100%;
+	vertical-align: middle;
 	position: absolute;
 	right: 0;
 	top: 0;
-	z-index: -100;
+	left: 0;
 }
 
 #ich:hover figcaption {
@@ -31,7 +32,6 @@
 
 .captioned figcaption p {
 	text-align:center;
-	vertical-align: middle;
 	display: table-cell;
 	font-size: 1.5em;
 	width: 100%;
@@ -44,10 +44,10 @@
 }
 
 #ich:hover figcaption p {
-	opacity: 1;
 	-moz-transform: translateY(40px);
 	-webkit-transform: translateY(40px);
 	transform: translateY(40px);
-	z-index: 102;
 	height: 100%;
+	z-index: 102;
+	opacity: 1;
 }
