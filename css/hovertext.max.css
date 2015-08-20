@@ -43,6 +43,7 @@
 }
 
 #ich:hover figcaption p {
+	align:center;
 	opacity: 1;
 	-moz-transform: translateY(40px);
 	-webkit-transform: translateY(40px);
