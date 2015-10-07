@@ -176,6 +176,7 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
+    max-height: 400;
     text-align: center;
     color: #fff;
     background-image: url(../img/header.jpg);
